@@ -11,6 +11,11 @@
     <div class="logo">
       <img src="logo.png" alt="logo">
     </div>
+    <div class="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
     <nav>
       <div class="container">
         <a class="navlink" href="#home">HOME</a>
@@ -21,6 +26,7 @@
       </div>
     </nav>
   </header>
+  
   <main>
     <section id="home" class="home">
       <div class="hero-image">
@@ -42,14 +48,14 @@
       <div class="html-container">
         <img src="html.png" alt="html">
         <h3>HTML</h3>
-        </div>
-        <div class="css-container">
-          <img src="css.webp" alt="css">
-          <h3>CSS</h3>
-        </div>
-        <div class="js-container">
-          <img src="js.png" alt="js">
-          <h3>JAVASCRIPT</h3>
+      </div>
+      <div class="css-container">
+        <img src="css.webp" alt="css">
+        <h3>CSS</h3>
+      </div>
+      <div class="js-container">
+        <img src="js.png" alt="js">
+        <h3>JAVASCRIPT</h3>
       </div>
     </section>
     <section id="projects">
@@ -66,6 +72,16 @@
       <ul>
         <li><strong>Email:</strong> panlilio.gabriel.pura@gmail.com</li>
         <li><strong>Phone:</strong> 09453455039</li>
+      </ul>
     </section>
+  </main>
+
+  <script>
+    const burger = document.querySelector('.burger');
+    const navContainer = document.querySelector('nav');
+    burger.addEventListener('click', () => {
+      navContainer.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
